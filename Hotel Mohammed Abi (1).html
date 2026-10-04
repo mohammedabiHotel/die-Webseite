@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hotel Mohammed Abi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f1f8;--surface:#fff;--ink:#1b1f3b;--muted:#5a5f80;--amber:#c47f0a;--plum:#5b3a6b;--line:#d9d6e6;--hero1:#1b1f3b;--hero2:#33305f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12142a;--surface:#1b1f3b;--ink:#eceaf6;--muted:#a6a9c8;--amber:#f2b544;--line:#303559}}
+:root[data-theme="dark"]{--bg:#12142a;--surface:#1b1f3b;--ink:#eceaf6;--muted:#a6a9c8;--amber:#f2b544;--line:#303559}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:absolute;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:2;padding:20px 0;color:#eceaf6}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+nav b{font-family:"Cormorant Garamond",serif;font-size:1.4rem}
+nav a{text-decoration:none;margin-left:22px;font-size:.95rem}
+.hero{background:linear-gradient(180deg,var(--hero1),var(--hero2));color:#eceaf6;padding:150px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:end}
+.hero h1{font-size:clamp(3rem,9vw,6.4rem);letter-spacing:-.01em}
+.hero h1 span{display:block;font-style:italic;font-weight:500;color:#f2b544;font-size:.5em;margin-top:14px}
+.hero p{max-width:34ch;color:#c9cbe4;margin:22px 0 30px}
+.btn{display:inline-block;background:#f2b544;color:#1b1f3b;font-weight:600;padding:14px 26px;border-radius:999px;text-decoration:none}
+.btn:hover{background:#ffc860}
+.facade{width:100%;height:auto;display:block;margin-top:40px}
+.win{fill:#2a2a55}.lit{fill:#f2b544;animation:glow 4s ease-in-out infinite}
+@keyframes glow{0%,100%{opacity:.55}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.lit{animation:none}}
+section{padding:88px 0}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:12px}
+.lead{color:var(--muted);max-width:52ch;margin:0 0 40px}
+.score{display:flex;gap:28px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0}
+.score big{font:700 5rem/1 "Cormorant Garamond",serif;color:var(--amber)}
+.stars{color:var(--amber);font-size:1.5rem;letter-spacing:3px}
+.score small{color:var(--muted);display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.room{background:var(--surface);border-left:4px solid var(--plum);padding:26px;border-radius:4px 18px 4px 18px}
+.room h3{font-size:1.7rem;margin-bottom:8px}
+.room p{margin:0;color:var(--muted)}
+.rev{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.rev:nth-child(2n){border-radius:4px 18px 4px 18px}
+.rev q{font:500 1.35rem/1.3 "Cormorant Garamond",serif;quotes:"„" "“"}
+.rev footer{margin-top:auto;font-size:.9rem;color:var(--muted)}
+.rev footer b{color:var(--ink);display:block}
+.about{background:var(--surface);border-block:1px solid var(--line)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about p{color:var(--muted);margin:0 0 14px}
+#kontakt{text-align:center}
+#kontakt p{margin:0 auto 28px;color:var(--muted);max-width:44ch}
+footer.site{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;text-align:center}
+@media (max-width:760px){.hero .wrap,.about .wrap{grid-template-columns:1fr}nav a{margin-left:14px}.hero{padding-top:120px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Mohammed Abi</b><div><a href="#bewertungen">Bewertungen</a><a href="#aufenthalt">Aufenthalt</a><a href="#kontakt">Kontakt</a></div></div></nav>
+
+<header class="hero">
+<div class="wrap">
+<div>
+<h1>Hotel Mohammed Abi<span>Gut schlafen. Gut gelaunt aufwachen.</span></h1>
+<p>Ein Hotel, über das Gäste sprechen: mit 4,3 von 5 Sternen und Fotos, die sie selbst gemacht haben.</p>
+<a class="btn" href="#kontakt">Zimmer anfragen</a>
+</div>
+<svg class="facade" viewBox="0 0 400 300" role="img" aria-label="Hotelfassade bei Nacht mit einem erleuchteten Fenster">
+<circle cx="330" cy="60" r="26" fill="#eceaf6" opacity=".9"/><circle cx="342" cy="52" r="24" fill="#2e2c5a"/>
+<rect x="40" y="70" width="320" height="230" rx="6" fill="#14163a"/>
+<rect x="40" y="70" width="320" height="14" fill="#f2b544"/>
+<g class="win"><rect x="68" y="108" width="40" height="52" rx="20"/><rect x="130" y="108" width="40" height="52" rx="20"/><rect x="230" y="108" width="40" height="52" rx="20"/><rect x="292" y="108" width="40" height="52" rx="20"/>
+<rect x="68" y="184" width="40" height="52" rx="20"/><rect x="230" y="184" width="40" height="52" rx="20"/><rect x="292" y="184" width="40" height="52" rx="20"/></g>
+<rect class="lit" x="130" y="184" width="40" height="52" rx="20"/>
+<path d="M150 214c-7 0-9-6-9-11a9 9 0 0 1 18 0c0 5-2 11-9 11z" fill="#14163a" opacity=".55"/>
+<path d="M176 300v-50a24 24 0 0 1 48 0v50z" fill="#f2b544"/>
+</svg>
+</div>
+</header>
+
+<main>
+<section id="bewertungen">
+<div class="wrap">
+<h2>Das sagen unsere Gäste</h2>
+<p class="lead">Echte Rezensionen, frisch aus den letzten Tagen. Ungefiltert, so wie sie geschrieben wurden.</p>
+<div class="score" role="group" aria-label="Gesamtbewertung 4,3 von 5 bei 6 Rezensionen">
+<big>4,3</big>
+<div><div class="stars" aria-hidden="true">★★★★☆</div><small>Durchschnitt aus 6 Rezensionen</small></div>
+</div>
+<div class="grid" style="margin-top:36px">
+<article class="rev"><q>Super, aber Geister gibt es da auch.</q><footer><b>Michal Blaszczyk</b>mit 4 Fotos · vor 1 Tag</footer></article>
+<article class="rev"><q>Sehr gut, bestes Hotel, wo gibt.</q><footer><b>Devrim Zirek</b>2 Rezensionen, 5 Fotos · vor 2 Tagen</footer></article>
+<article class="rev"><q>10/10, auch eher schöne Personen.</q><footer><b>Rafail Xanth</b>2 Rezensionen, 1 Foto · vor 4 Tagen</footer></article>
+<article class="rev"><q>Hübsch.</q><footer><b>Efe Bektas</b>mit 3 Fotos · vor 2 Tagen</footer></article>
+<article class="rev"><q>Ohne Worte, dafür mit zwei Fotos.</q><footer><b>Luis</b>1 Rezension, 2 Fotos · vor 4 Tagen</footer></article>
+</div>
+</div>
+</section>
+
+<section id="aufenthalt" class="about">
+<div class="wrap">
+<div>
+<h2>Ankommen und bleiben</h2>
+</div>
+<div>
+<p>Im Hotel Mohammed Abi erwartet Sie ein Haus mit Charakter. Gäste loben die Atmosphäre, die Zimmer und die Menschen, denen sie begegnen.</p>
+<p>Und ja, manche Gäste berichten von nächtlichen Mitbewohnern aus der Geisterwelt. Wir nehmen es mit Humor und lassen im Flur das Licht an.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2>Was Gäste schätzen</h2>
+<p class="lead">Drei Dinge, die in den Rezensionen immer wieder auftauchen.</p>
+<div class="grid">
+<div class="room"><h3>Schöne Zimmer</h3><p>Gäste nennen das Haus hübsch und teilen gern Fotos davon.</p></div>
+<div class="room"><h3>Nette Menschen</h3><p>Ein Publikum, das Gäste als „eher schön“ beschreiben.</p></div>
+<div class="room"><h3>Besondere Nächte</h3><p>Wer eine Geschichte für zu Hause sucht, ist hier richtig.</p></div>
+</div>
+</div>
+</section>
+
+<section id="kontakt">
+<div class="wrap">
+<h2>Ihr Zimmer wartet</h2>
+<p>Fragen Sie Ihren Wunschtermin an. Wir melden uns persönlich bei Ihnen.</p>
+<a class="btn" href="mailto:mohammedabi@tutamail.com">Anfrage senden</a>
+</div>
+</section>
+</main>
+<footer class="site"><div class="wrap">© 2026 Hotel Mohammed Abi</div></footer>
+</body>
+</html>
